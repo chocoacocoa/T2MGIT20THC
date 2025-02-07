@@ -2,19 +2,21 @@
 #headerText{
     color: white;
     text-align: center;
+	margin: 50vh;
 }
 *{
     font-family: "Poppins", serif;
     font-weight: 700;
     font-style: normal;
+	transition: 0.2s;
 }
 body{
     cursor: crosshair;
-
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
+	height: 100%;
+	overflow: hidden;
 }
 .screen{
     background: rgba( 255, 255, 255, 0.25 );
@@ -23,13 +25,16 @@ backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-height: 100vh;
+height: fit-content;
 margin: 0;
 
 }
 #folder{
-	width: 100vw;
-    height: 100vh;
+	width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+	flex-direction: column;
 }
 @keyframes gradient {
 	0% {
@@ -42,9 +47,59 @@ margin: 0;
 		background-position: 0% 50%;
 	}
 }
+.kpopDiv{
+	text-align: center;
+	font-size: 9vmin;
+    color: white;
+}
+.kpopDiv h1{
+	margin-top: 0;
+}
 #kpopImg{
     width: 50vw;
-    position: absolute;
-    left: 0vw;
     margin: 5vmin;
+	margin-bottom: 0;
+	font-size: 10vmin;
+	border-radius: 15px;
+	border: 20px double pink;
+}
+.kpopDiv video{
+	position: absolute;
+    left: 34vw;
+	top: 0;
+	display: none;
+}
+.rapDiv{
+	text-align: center;
+	font-size: 9vmin;
+    color: white;
+}
+.rapDiv h1{
+	margin-top: 0;
+	animation: appear;
+}
+@keyframes appear{
+	from{
+		opacity: 0;
+		scale: 0.5;
+	}
+	to{
+		opacity: 1;
+		scale: 1;
+	}
+}
+#rapImg{
+    width: 50vw;
+    margin: 5vmin;
+	margin-bottom: 0;
+	font-size: 10vmin;
+	border-radius: 15px;
+	border: 20px double pink;
+}
+#top2header{
+	text-align: center;
+	font-size: 10vmin;
+}
+#top2header h2{
+	font-size: 5vmin;
 }

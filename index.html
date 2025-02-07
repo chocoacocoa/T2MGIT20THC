@@ -6,15 +6,27 @@
     <title>MUSIC GENRE'S LOVED BY THE YOUTH</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <!-- GUMAWA NG 2 TOP BEST GENRES SA MGA NEW GENERATIONS YOUTH YOUGNER GENS -->
-    <div id="headerText" onclick="click()" onmouseenter="hoverIn()">
-        <h1>MUSIC GENRE OF THE CENTURY</h1>
+    <div id="headerText" onclick="titleclick()" onmouseenter="hoverIn()">
+        <h1 id="textHeaderH1">MUSIC GENRE OF THE CENTURY</h1>
     </div>
     <div class="screen">
         <div id="folder">
-            <img id="kpopImg" src="pet 4 something/kpop.jpg">
-            
+            <div id="top2header">
+                <h1>THE TOP 2</h1>
+                <h2>Awardees for the Best Music Genre of 20th Century</h2>
+            </div>
+
+            <div class="kpopDiv">
+                <img id="kpopImg" onmouseenter="hover()" onmouseleave="hoverOut()" onclick="kpopVid()" src="pet 4 something/kpop.jpg">
+                <h1>KPOP</h1>
+
+            </div>
+            <div class="rapDiv">
+                <img id="rapImg" onmouseenter="hover()" onmouseleave="hoverOut()" src="medias/BEST-RAP-VIDS.png">
+                <h1>RAP</h1>
+            </div>
         </div>
     </div>
 </body>
